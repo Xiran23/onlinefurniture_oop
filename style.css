@@ -1,0 +1,151 @@
+nav {
+  background-color: #fdfdfd;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu ul li:hover>ul {
+  display: block;
+}
+
+.menu ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul ul li {
+  margin: 0;
+}
+
+.menu ul ul li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+
+.cart-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #0f2a48;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.cart-icon img {
+  height: 32px;
+}
+
+.cart-search input[type="text"] {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+
+/* .cart-icon {
+  background-image: url('cart.png');
+
+  } */
+
+
+
+/* Add highlight to selected nav item */
+.nav-item.active>a {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* items lists */
+.items-list {
+
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  /* padding: 10%; */
+  width: 90%;
+
+  /* border: 1px solid; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  align-content: flex-start;
+  gap: 2em ;
+
+}
+
+
+.cart-items {
+
+ 
+  border: 1px solid #ccc;
+  padding: 10px;
+  
+  width: 150px;
+  text-align: center;
+  flex-basis: 15%;
+  /* margin-bottom: 5%; */
+  
+
+  /* height: 150px; */
+
+}
+.cart-items img{
+  /* height: 70px; */
+  width: 90%; 
+}
